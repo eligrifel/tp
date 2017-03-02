@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "691419692480",
+    "firebase_url": "https://tennispro-1331.firebaseio.com",
+    "project_id": "tennispro-1331",
+    "storage_bucket": "tennispro-1331.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691419692480:android:75a9b18f8d3a6d62",
+        "android_client_info": {
+          "package_name": "mobile_dev.tennispro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691419692480-t9ovrahr94fj9o15dcqtduipaiq1slk1.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "691419692480-onbpo4qrql1ptavd7ciddho9cqhrirsk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "691419692480-i7b2203i0b57vhctcqt9brcp27p6vvmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxv4ZdXz83_pNF1eT6PZZwMZY9nfoG5pk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

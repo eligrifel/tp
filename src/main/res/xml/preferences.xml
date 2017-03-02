@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    <EditTextPreference android:title="Your Name"
+        android:key="username"
+        android:summary="Please provide your username"></EditTextPreference>
+    <CheckBoxPreference android:title="Application Updates"
+        android:defaultValue="false"
+        android:summary="This option if selected will allow the application to check for latest versions."
+        android:key="applicationUpdates" />
+        -->
+    <ListPreference     android:title="דף הבית"
+        android:summary="לחץ לבחירת עמוד הבית"
+        android:key="homepage"
+        android:defaultValue="1"
+        android:entries="@array/home_page"
+        android:entryValues="@array/home_page_values"
+        />
+    <MultiSelectListPreference
+        android:dialogTitle="@string/mode_repeat"
+        android:key="mode_repeat"
+        android:summary=""
+        android:title="@string/mode_repeat"
+        android:entries="@array/alerts"
+        android:entryValues="@array/alerts_values"
+        android:defaultValue="@array/default_values"
+
+        />
+
+</PreferenceScreen>
