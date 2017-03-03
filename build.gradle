@@ -9,6 +9,7 @@ android {
         javaMaxHeapSize "4g"
     }
 
+
     defaultConfig {
         applicationId "mobile_dev.tennispro"
         minSdkVersion 14
