@@ -362,7 +362,7 @@ private WebView webview= null;
            String myUrl= extras.getString("url");
             if((myUrl!=null)&&(!(myUrl.equals("")))) {
                 getIntent().removeExtra("url");
-                webview.loadUrl(myUrl);
+             //   webview.loadUrl(myUrl);
 
             }
         }
