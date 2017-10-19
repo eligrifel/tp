@@ -72,13 +72,15 @@ public class MyPreferencesActivity extends PreferenceActivity {
                 Log.d("arrays",oldAlertset.toString()+alertset.toString());
             String unsubscribe ="";
             String subscribe="";
+            //if general changed for the first time
+
             //if general alert changed
             if ((!(oldAlertset.contains("1")))&&(alertset.contains("1"))) {
                 FirebaseMessaging.getInstance().subscribeToTopic("general");
                 subscribe += "כל ההתראות";
             }
             else
-            if ((oldAlertset.contains("1"))&&(!alertset.contains("1"))) {
+            if (!alertset.contains("1")) {
                 FirebaseMessaging.getInstance().unsubscribeFromTopic("general");
                 unsubscribe += "כל ההתראות";
             }
