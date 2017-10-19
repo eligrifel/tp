@@ -79,7 +79,7 @@ public class MyPreferencesActivity extends PreferenceActivity {
             }
             else
             if ((oldAlertset.contains("1"))&&(!alertset.contains("1"))) {
-                FirebaseMessaging.getInstance().subscribeToTopic("general");
+                FirebaseMessaging.getInstance().unsubscribeFromTopic("general");
                 unsubscribe += "כל ההתראות";
             }
             //if competetion alert changed
@@ -89,7 +89,7 @@ public class MyPreferencesActivity extends PreferenceActivity {
             }
             else
             if ((oldAlertset.contains("2"))&&(!alertset.contains("2"))) {
-                FirebaseMessaging.getInstance().subscribeToTopic("3");
+                FirebaseMessaging.getInstance().unsubscribeFromTopic("competition");
                 unsubscribe += "תחרויות ";
             }
 
@@ -100,7 +100,7 @@ public class MyPreferencesActivity extends PreferenceActivity {
             }
             else
             if ((oldAlertset.contains("3"))&&(!alertset.contains("3"))) {
-                FirebaseMessaging.getInstance().subscribeToTopic("availableToPlay");
+                FirebaseMessaging.getInstance().unsubscribeFromTopic("availableToPlay");
                 unsubscribe += "שחקן פנוי ";
 
             }
