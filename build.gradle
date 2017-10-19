@@ -14,8 +14,8 @@ android {
         applicationId "mobile_dev.tennispro"
         minSdkVersion 14
         targetSdkVersion 25
-        versionCode 2
-        versionName "1.1"
+        versionCode 6
+        versionName "1.51"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
