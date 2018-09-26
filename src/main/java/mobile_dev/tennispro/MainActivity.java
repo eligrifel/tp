@@ -193,7 +193,15 @@ private WebView webview= null;
 
                 @Override
                 public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                    return super.shouldOverrideUrlLoading(view, url);
+                    // open in Webview
+                    if (url.contains(".co.il") ){
+
+                        return false;
+                    }
+                    // open rest of URLS in default browser
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    startActivity(intent);
+                    return true;
                 }
 
                 public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
@@ -335,7 +343,7 @@ private WebView webview= null;
         {
             popup.dismiss();
         }
-
+        webview.onPause();
     }
 
 
@@ -366,6 +374,7 @@ private WebView webview= null;
 
             }
         }
+        webview.onResume();
     }
 
 
